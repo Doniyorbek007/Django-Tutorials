@@ -1,0 +1,18 @@
+- Create venv command:
+$ python -m venv .env
+
+- Activate venv:
+Linux: $ source .env/bin/activate
+Windows: $ .env/Scripts/activate
+
+- Install Django :
+$ pip install Django~=4.2.3
+
+- Check Django version:
+$ python -m django --version
+
+- Create Django project:
+$ django-admin startproject config .
+
+- Create new Django application:
+$ python manage.py startapp (app name)
