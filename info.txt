@@ -6,7 +6,7 @@ Linux: $ source .env/bin/activate
 Windows: $ .env/Scripts/activate
 
 - Install Django :
-$ pip install Django~=4.2.3
+$ pip install Django~=4.2.3 or $ pip install Django==4.2.3
 
 - Check Django version:
 $ python -m django --version
@@ -19,3 +19,6 @@ $ python manage.py startapp (app name)
 
 Create requirements.txt automatically:
 $ pip freeze > requirements.txt
+
+- Install all packages using requirements.txt:
+$ pip install -r requirements.txt
