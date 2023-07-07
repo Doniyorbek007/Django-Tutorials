@@ -16,3 +16,6 @@ $ django-admin startproject config .
 
 - Create new Django application:
 $ python manage.py startapp (app name)
+
+Create requirements.txt automatically:
+$ pip freeze > requirements.txt
