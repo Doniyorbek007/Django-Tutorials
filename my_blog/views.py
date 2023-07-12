@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def hello(request):
-    return HttpResponse("<h1>Home</h1><div><a href='/home'style='margin-right:10px;'>Home</a><a href='/about'style='margin:10px;'>About</a><a href='/my_blog' style='margin:10px;'>My blog</a><a href='/porfolio'style='margin:10px;'>Portfolio</a><a href='/contact'style='margin:10px;'>Contact</a></div>")
+    return HttpResponse("<h1>Hello World!</h1><div><a href='/home'style='margin-right:10px;'>Home</a><a href='/about'style='margin:10px;'>About</a><a href='/my_blog' style='margin:10px;'>My blog</a><a href='/porfolio'style='margin:10px;'>Portfolio</a><a href='/contact'style='margin:10px;'>Contact</a></div>")
 
 def home(request):
     return HttpResponse("<h1>Home</h1><div><a href='/home'style='margin-right:10px;'>Home</a><a href='/about'style='margin:10px;'>About</a><a href='/my_blog' style='margin:10px;'>My blog</a><a href='/porfolio'style='margin:10px;'>Portfolio</a><a href='/contact'style='margin:10px;'>Contact</a></div>")
