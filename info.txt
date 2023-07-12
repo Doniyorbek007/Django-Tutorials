@@ -25,3 +25,9 @@ $ pip install -r requirements.txt
 
 - Apply the migrations for apps:
 $ python manage.py migrate
+
+- Open python file using terminal:
+$ python manage.py shell
+
+- Create super user:
+$ python manage.py createsuperuser
