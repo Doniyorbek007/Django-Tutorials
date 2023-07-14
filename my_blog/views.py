@@ -1,8 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
 def home(req):
-    return render(req, "index.html")
+    context = {'name':'Sardor'} 
+    return render(req, "index.html", context)
 
 def blog(req):
     return render(req,"blog.html")
