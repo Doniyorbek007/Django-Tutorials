@@ -10,7 +10,8 @@ def blog(req):
 def about(req):
     return render(req,"about.html")
 
-
+def portfolio(req):
+    return render(req, "portfolio.html")
 
 def contact(req):
     return render(req, "contact.html")
