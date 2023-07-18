@@ -10,7 +10,7 @@ def about(req):
     return render(req, "pages/about.html")
 
 def portfolio(req):
-    return render(req, "pages/portfolio.html")
+    return render(req, "pages/portfolio.html")  
 
 def blog(req):
     return render(req, "pages/blog.html")
