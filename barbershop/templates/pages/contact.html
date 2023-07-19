@@ -2,6 +2,7 @@
 {% load static %}
 {% block contact %}
 
+
 <section class="contact-section" id="section_5">
     <div class="section-padding section-bg">
         <div class="container">
@@ -16,6 +17,7 @@
 
     <div class="section-padding">
         <div class="container">
+            {% for i in data %}
             <div class="row">
 
                 <div class="col-lg-6 col-12">
@@ -23,42 +25,22 @@
 
                     <p class="text-white d-flex mb-1">
                         <a href="tel: 120-240-3600" class="site-footer-link">
-                            (+49) 
-                            120-240-3600
+                            {{i.phone}}
                         </a>
                     </p>
 
                     <p class="text-white d-flex">
                         <a href="mailto:info@yourgmail.com" class="site-footer-link">
-                            hello@barber.beauty
+                           {{i.email}}
                         </a>
                     </p>
 
                     <ul class="social-icon">
                         <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-facebook">
+                            <a href="{{i.social_media}}" class="social-icon-link bi-facebook">
                             </a>
                         </li>
 
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-twitter">
-                            </a>
-                        </li>
-
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-instagram">
-                            </a>
-                        </li>
-
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-youtube">
-                            </a>
-                        </li>
-
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-whatsapp">
-                            </a>
-                        </li>
                     </ul>
                 </div>
 
@@ -69,7 +51,7 @@
 
                             <strong>Open Daily</strong>
 
-                            <span class="ms-auto">10:00 AM - 8:00 PM</span>
+                            <span class="ms-auto">{{i.open_time}}</span>
                         </h6>
                     </div>
                 </div>
@@ -79,6 +61,7 @@
                 </div>
 
             </div>
+            {% endfor %}
         </div>
     </div>
 </section>

@@ -18,5 +18,6 @@ def price_list(req):
     return render(req, 'pages/price_list.html')
 
 def contact(req):
-    data = 
-    return render(req, 'pages/contact.html')
+    data = Contact.objects.all()
+    context = {"data":data}
+    return render(req, 'pages/contact.html',context)
