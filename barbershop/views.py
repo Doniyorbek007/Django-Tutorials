@@ -1,21 +1,22 @@
 from django.shortcuts import render
-
+from .models import Contact
 # Create your views here.
 
 def base(req):
     return render(req, 'base.html')
 
 def home(req):
-    return render(req, 'pages/section1.html')
+    return render(req, 'pages/home.html')
 
 def our_story(req):
-    return render(req, 'pages/section2.html')
+    return render(req, 'pages/our_story.html')
 
 def sevices(req):
-    return render(req, 'pages/section3.html')
+    return render(req, 'pages/services.html')
 
 def price_list(req):
-    return render(req, 'pages/section4.html')
+    return render(req, 'pages/price_list.html')
 
 def contact(req):
-    return render(req, 'pages/section5.html')
+    data = 
+    return render(req, 'pages/contact.html')

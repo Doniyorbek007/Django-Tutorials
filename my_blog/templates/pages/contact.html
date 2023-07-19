@@ -1,7 +1,17 @@
-{% extends "base.html" %}
+{% extends "base.html" %} 
 
 {% block contact %}
 
-<h1>Contact<h1>
-    
+  <h1>Contact<h1>
+  
+  {{ data }} 
+  
+  {% for i in data %}
+
+    <h4>{{i.location}}</h4>
+    <p>{{i.email}}</p>
+    <i>{{i.phone}}</i>
+    <p>{{i.name}}</p>
+
+
 {% endblock contact %}
