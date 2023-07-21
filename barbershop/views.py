@@ -3,7 +3,9 @@ from .models import Contact
 # Create your views here.
 
 def base(req):
-    return render(req, 'base.html')
+    info = Contact.objects.all()
+    case = {"info": info}
+    return render(req, 'base.html', case)
 
 def home(req):
     return render(req, 'pages/home.html')
