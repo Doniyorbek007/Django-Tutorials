@@ -11,6 +11,7 @@ class Contact(models.Model):
     youtube = models.CharField(max_length=255)
     whatsapp = models.CharField(max_length=255)
 
-    
-    street = models.CharField(max_length=255)
+class Branche(models.Model):
+    name = models.CharField(max_length=255)
     location = models.CharField(max_length=255)
+    

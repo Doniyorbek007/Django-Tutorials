@@ -1,11 +1,9 @@
 from django.shortcuts import render
-from .models import Contact
+from .models import *
 # Create your views here.
 
 def base(req):
-    info = Contact.objects.all()
-    case = {"info": info}
-    return render(req, 'base.html', case)
+    return render(req, 'base.html')
 
 def home(req):
     return render(req, 'pages/home.html')
@@ -20,6 +18,10 @@ def price_list(req):
     return render(req, 'pages/price_list.html')
 
 def contact(req):
-    data = Contact.objects.all()
-    context = {"data":data}
+    contact = Branche.objects.all()
+    branche = Contact.objects.all()
+    context = {
+        'contact': contact,
+        'branche': branche,
+    }
     return render(req, 'pages/contact.html',context)
