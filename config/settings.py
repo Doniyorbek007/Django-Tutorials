@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # 'my_blog.apps.MyBlogConfig',
-    # 'barbershop.apps.BarbershopConfig',
-    'drcare.apps.DrcareConfig',
+    'barbershop.apps.BarbershopConfig',
+    # 'drcare.apps.DrcareConfig',
 ]
 
 MIDDLEWARE = [

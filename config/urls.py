@@ -7,8 +7,8 @@ urlpatterns = [
     
     # path("", include("my_blog.urls")),
     
-    # path("", include("barbershop.urls")),
+    path("", include("barbershop.urls")),
     
-    path("", include("drcare.urls")),
+    # path("", include("drcare.urls")),
 
 ]
