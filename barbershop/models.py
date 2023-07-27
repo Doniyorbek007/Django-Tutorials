@@ -2,12 +2,12 @@ from django.db import models
 
 # Create your models here.
 class Price(models.Model):
-    photo = models.ImageField(upload_to='media',unique=True)
+    photo = models.ImageField(upload_to='media')
     starting = models.FloatField(max_length=6)
     haircut = models.FloatField(max_length=6)
     beard_trim = models.FloatField(max_length=6)
     razor_cut = models.FloatField(max_length=6)
-    shawes = models.FloatField(max_length=6)
+    shaves = models.FloatField(max_length=6)
     styling_color = models.FloatField(max_length=6)
 
 

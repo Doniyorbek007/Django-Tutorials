@@ -12,7 +12,7 @@
                     <div class="mb-4">
                         <h2 class="mb-2">Price List</h2>
                         
-                        <strong>Starting at $25</strong>
+                        <strong>Starting at ${{i.starting}}</strong>
                     </div>
                     
                     <div class="price-list-thumb">
@@ -20,7 +20,7 @@
                             Haircut
                             <span class="price-list-thumb-divider"></span>
                             
-                            <strong>$32.00</strong>
+                            <strong>${{i.haircut}}</strong>
                         </h6>
                     </div>
                     
@@ -29,7 +29,7 @@
                             Beard Trim
                             <span class="price-list-thumb-divider"></span>
 
-                            <strong>$26.00</strong>
+                            <strong>${{i.beard_trim}}</strong>
                         </h6>
                     </div>
                     
@@ -38,7 +38,7 @@
                             Razor Cut
                             <span class="price-list-thumb-divider"></span>
                             
-                            <strong>$36.00</strong>
+                            <strong>${{i.razor_cut}}</strong>
                         </h6>
                     </div>
 
@@ -47,7 +47,7 @@
                             Shaves
                             <span class="price-list-thumb-divider"></span>
                             
-                            <strong>$30.00</strong>
+                            <strong>${{i.shaves}}</strong>
                         </h6>
                     </div>
                     
@@ -56,14 +56,14 @@
                             Styling / Color
                             <span class="price-list-thumb-divider"></span>
                             
-                            <strong>$25.00</strong>
+                            <strong>${{i.styling_color}}</strong>
                         </h6>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-12 custom-block-bg-overlay-wrap mt-5 mb-5 mb-lg-0 mt-lg-0 pt-3 pt-lg-0">
-                <img src="{{i.photo}}" class="custom-block-bg-overlay-image img-fluid" alt="">
+                <img src="{{i.photo.url}}" class="custom-block-bg-overlay-image img-fluid" alt="">
             </div>
             
         </div>
