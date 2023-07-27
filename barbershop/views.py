@@ -15,7 +15,9 @@ def sevices(req):
     return render(req, 'pages/services.html')
 
 def price_list(req):
-    return render(req, 'pages/price_list.html')
+    price = Price.objects.all()
+    context = {'price' : price} 
+    return render(req, 'pages/price_list.html',context)
 
 def contact(req):
     contact = Branche.objects.all()
