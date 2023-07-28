@@ -23,18 +23,22 @@ def home(req):
 def our_story(req):
     contact = Branche.objects.all()
     branche = Contact.objects.all()
+    barbers = Barber.objects.all()
     context = {
         'contact': contact,
         'branche': branche,
+        'barbers': barbers
     }
     return render(req, 'pages/our_story.html',context)
 
 def sevices(req):
     contact = Branche.objects.all()
     branche = Contact.objects.all()
+    services = Service.objects.all()
     context = {
         'contact': contact,
         'branche': branche,
+        'services': services,
     }
     return render(req, 'pages/services.html',context)
 

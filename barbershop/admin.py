@@ -6,3 +6,5 @@ from .models import *
 admin.site.register(Contact)
 admin.site.register(Branche)
 admin.site.register(Price)
+admin.site.register(Service)
+admin.site.register(Barber)
