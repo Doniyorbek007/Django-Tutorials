@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
-from django.views.generic.base import View
+from django.views import View # import working for only this class
 from .models import *
 # Create your views here.
 
@@ -64,13 +64,18 @@ def price_list(req):
 #     }
 #     return render(req, 'pages/contact.html',context)
 
+
+# class ContactView(TemplateView):
+#     models = Contact
+#     template_name = 'pages/contact.html'
+
+#     def render_data(self, **kwargs):
+#         context = super(ContactView,self).get_context_data(self,**kwargs)
+#         context ['contact'] = Contact.objects.all()
+#         context ['branche'] = Branche.objects.all()
+
+#         return context
+
+
 class ContactView(TemplateView):
     models = Contact
-    template_name = 'pages/contact.html'
-
-    def render_data(self, **kwargs):
-        context = super(ContactView,self).get_context_data(self,**kwargs)
-        context ['contact'] = Contact.objects.all()
-        context ['branche'] = Branche.objects.all()
-
-        return context
