@@ -79,3 +79,4 @@ def price_list(req):
 
 class ContactView(TemplateView):
     models = Contact
+    
