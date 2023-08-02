@@ -66,4 +66,10 @@ def price_list(req):
 class ContactView(TemplateView):
     models = Contact
     template_name = 'pages/contact.html'
-    
+
+    def render_data(self, **kwargs):
+        context = super(ContactView,self).get_context_data(self,**kwargs)
+        context ['contact'] = Contact.objects.all()
+        context ['branche'] = Branche.objects.all()
+
+        return context
