@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.views import View # import working for only this class
 from .models import *
+from django.http import HttpResponse
+
 # Create your views here.
 
 def base(req):
@@ -77,6 +79,6 @@ def price_list(req):
 #         return context
 
 
-class ContactView(TemplateView):
-    models = Contact
-    
+class ContactView(View):
+    def get(self,request):
+        return HttpResponse("result")
