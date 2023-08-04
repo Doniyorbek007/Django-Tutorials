@@ -1,6 +1,8 @@
 # from django.http import HttpResponse,JsonResponse
+from typing import Any, Dict
 from django.shortcuts import render
-from .models import Contact
+from django.views.generic import ListView, DetailView
+from .models import Contact, Blog
 
 def home(req):
     # return HttpResponse("<h1>Home</h1>")
@@ -16,6 +18,22 @@ def portfolio(req):
 
 def blog(req):
     return render(req, "pages/blog.html")
+
+class BlogPageView(ListView):
+    model = Blog
+    template_name = 'pages/blog.html'
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super().get_context_data(**kwargs)
+        # Add in the publisher
+        context["blog"] = Blog.objects.all()
+        return context
+    
+class DetailBlogView(DetailView):
+    model = Blog
+    template_name = 'pages/blog_single.html'
+    
 
 def contact(req):
     data = Contact.objects.all()

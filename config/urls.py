@@ -10,9 +10,9 @@ urlpatterns = [
     
     # path("",include("hello_world.urls")),
     
-    # path("", include("my_blog.urls")),
+    path("", include("my_blog.urls")),
     
-    path("", include("barbershop.urls")),
+    # path("", include("barbershop.urls")),
     
     # path("", include("drcare.urls")),
 

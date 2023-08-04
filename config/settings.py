@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # 'my_blog.apps.MyBlogConfig',
-    'barbershop.apps.BarbershopConfig',
+    'my_blog.apps.MyBlogConfig',
+    # 'barbershop.apps.BarbershopConfig',
     # 'drcare.apps.DrcareConfig',
 ]
 
