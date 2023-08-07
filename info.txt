@@ -32,7 +32,7 @@ $ python manage.py shell
 - Create super user:
 $ python manage.py createsuperuser
 
-- Create model Contact:
+- Create model Contact: 
 $ python manage.py makemigrations my_blog
 
 - Install Pillow:
