@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'my_blog.apps.MyBlogConfig',
+    'models.apps.ModelsConfig',
+    # 'my_blog.apps.MyBlogConfig',
     # 'barbershop.apps.BarbershopConfig',
     # 'drcare.apps.DrcareConfig',
 ]
@@ -110,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC+5'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
