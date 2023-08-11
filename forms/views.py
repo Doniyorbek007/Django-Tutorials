@@ -13,4 +13,7 @@ def forms(req):
         if form.is_valid():
             return HttpResponseRedirect('')
     
-    return render(req, 'forms.html')
+    else:
+        form = MyForm()
+    
+    return render(req, 'forms.html', context={'form':form})
