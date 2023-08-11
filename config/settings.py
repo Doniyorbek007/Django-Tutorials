@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'forms.apps.FormsConfig',
+    'todo.apps.TodoConfig',
+    # 'forms.apps.FormsConfig',
     # 'models.apps.ModelsConfig',
     # 'my_blog.apps.MyBlogConfig',
     # 'barbershop.apps.BarbershopConfig',
