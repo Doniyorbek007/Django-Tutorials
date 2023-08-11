@@ -8,7 +8,9 @@ from django.conf.urls.static import serve
 urlpatterns = [
     path("admin/", admin.site.urls),
     
-    path('',include('models.urls')),
+    path('',include('forms.urls')),
+    
+    # path('',include('models.urls')),
 
     # path("",include("hello_world.urls")),
     
