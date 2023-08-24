@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,9 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'paginator.apps.PaginatorConfig',
     # 'todo.apps.TodoConfig',
     # 'forms.apps.FormsConfig',
-    'models.apps.ModelsConfig',
+    # 'models.apps.ModelsConfig',
     # 'my_blog.apps.MyBlogConfig',
     # 'barbershop.apps.BarbershopConfig',
     # 'drcare.apps.DrcareConfig',
