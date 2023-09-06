@@ -8,7 +8,9 @@ from django.conf.urls.static import serve
 urlpatterns = [
     path("admin/", admin.site.urls),
     
-    path('',include('paginator.urls')),
+    path('',include('user.urls')),
+
+    # path('',include('paginator.urls')),
    
     # path('',include('todo.urls')),
 

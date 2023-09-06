@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'paginator.apps.PaginatorConfig',
+    'user.apps.UserConfig',
+    # 'paginator.apps.PaginatorConfig',
     # 'todo.apps.TodoConfig',
     # 'forms.apps.FormsConfig',
     # 'models.apps.ModelsConfig',
