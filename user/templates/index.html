@@ -10,9 +10,10 @@
 <body>
 
     {% for i in post %}
-        {{i.author}}
-        {{i.title}}
-        {{i.content}}
+        <div>User: {{i.author}}</div>
+        <h3>{{i.title}}</h3>
+        <p>{{i.content}}</p>
+        <hr>
     {% endfor %}
 
 </body>
