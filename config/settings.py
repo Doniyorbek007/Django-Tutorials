@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     # 'my_blog.apps.MyBlogConfig',
     # 'barbershop.apps.BarbershopConfig',
     # 'drcare.apps.DrcareConfig',
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [
